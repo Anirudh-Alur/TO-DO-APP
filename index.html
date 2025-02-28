@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="todo-container">
+        <h2>To-Do List</h2>
+        <input type="text" id="todo-input" placeholder="Enter task">
+        <select id="time-select">
+            <option value="" disabled selected>Enter Timeline</option>
+            <option value="Morning">Morning</option>
+            <option value="Evening">Evening</option>
+            <option value="Night">Night</option>
+        </select>
+        <button class="add-task-btn" onclick="addTask()">+ Add Task</button>
+        <button class="clear-task-btn" onclick="clearTasks()">x Clear Task</button>
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
